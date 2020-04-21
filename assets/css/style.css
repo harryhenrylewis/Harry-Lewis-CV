@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  color: whitesmoke;
+  color: rgb(230, 230, 230);
   background-color: black;
 }
 
@@ -35,6 +35,7 @@ h2 {
 
 #menu, #logo {
   line-height: 100px;
+  position: relative;
 }
 
 #menu li {
@@ -52,10 +53,10 @@ h2 {
 
 #menu a:hover {
   color: #f1c9df;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
 }
 
 .active {
@@ -64,8 +65,11 @@ h2 {
 
 
 #hero-vid {
-  height: 80vh;
-  width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #hero-outer {
@@ -73,6 +77,11 @@ h2 {
   width: 100%;
   overflow: hidden;
   position: relative;
+}
+
+.main-mix {
+    position: relative;
+    margin: 0 auto;
 }
 
 #girls-img {
@@ -96,22 +105,101 @@ h2 {
   }
 }
 
+.girls {
+    text-align: center;
+}
+
+.girls li {
+    display: inline;
+}
+
+.girls a {
+    font-size: 120%;
+    margin: 10%;
+    padding: 1%;
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.girls a:hover {
+  color: #f1c9df;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
 .bio {
     color: whitesmoke;
-    padding: 10%;
-    text-transform: uppercase;
+    padding: 5%;
+    letter-spacing: 2px;
     text-align: justify;
 }
 
-.boiler-vid {
+.peace {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.boiler-vid-wrapper {
+  position: relative;
+  display: block;
+  width: 100%; 
+  height: 100%;
+  margin: 0 auto;
+  padding: 0% 0% 56.25%;
+  overflow: hidden;
+}
+.boiler-vid-wrapper .boiler-vid {
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+guest-mix {
     position: relative;
-    z-index:-1;
-    width:100%; 
-    height: 80vh;
+}
+
+.booking {
+    color: whitesmoke;
+    padding: 20%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 30px;
+}
+
+
+.booking a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.booking i {
+    font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 footer {
-    height: 150px;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+}
+
+footer i:hover {
+  color: #f1c9df;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
 }
 
 .social-networks{
@@ -123,11 +211,33 @@ footer {
 }
 
 .social-networks i {
-    font-size: 160%;
+    font-size: 150%;
     margin: 1%;
-    padding: 5%;
+    padding: 1%;
     color: whitesmoke;
 }
+
+.copyright {
+    color: whitesmoke;
+    font-size: 50%;
+    list-style-type: none;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.copyright a:hover {
+  color: #f1c9df;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+
 
 /* .responsive
 

@@ -13,17 +13,18 @@ body {
 }
 
 h2 {
+  font-family: 'Roboto Condensed';
   text-transform: uppercase;
   letter-spacing: 4px;
   color: whitesmoke;
+
 }
 
 #logo {
   float: left;
-  height: 70px;
-  width: 70px;
   margin-left: 30px;
-  color: whitesmoke;
+  height: 60px;
+  width: 60px;
 }
 
 #menu {
@@ -34,21 +35,18 @@ h2 {
 }
 
 #menu, #logo {
-  line-height: 100px;
-  position: relative;
+  line-height: 75px;
 }
 
 #menu li {
   float: left;
   margin-right: 30px;
-  
 }
 
 #menu a {
   text-decoration: none;
-  color: inherit;
   text-transform: uppercase;
-
+  color: inherit;
 }
 
 #menu a:hover {
@@ -64,39 +62,40 @@ h2 {
 }
 
 
-#hero-vid {
+#hero-vid-spacer {
     position: relative;
-    z-index: -1;
-    display: block;
-    margin: 0 auto;
+    height: 750px;
     width: 100%;
+    overflow: hidden;
+    background-color: transparent;
 }
 
-#hero-outer {
-  height: 80%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+#hero-vid {
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: -1;
 }
 
-.main-mix {
-    position: relative;
-    margin: 0 auto;
+.index-mix {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+    width: 50%;
 }
 
 #girls-img {
-  height: 100%;
+  height: 80%;
   width: 100%;
   overflow: hidden;
-  position: relative;
   
-  animation-name: hero-zoom;
+  animation-name: girls-zoom;
   animation-duration: 10s;
   animation-fill-mode: forwards;
 }
 
 
-@keyframes hero-zoom {
+@keyframes girls-zoom {
   from {
     transform: scale(1);
   }
@@ -107,6 +106,7 @@ h2 {
 
 .girls {
     text-align: center;
+    padding: 2%;
 }
 
 .girls li {
@@ -114,7 +114,7 @@ h2 {
 }
 
 .girls a {
-    font-size: 120%;
+    font-size: 100%;
     margin: 10%;
     padding: 1%;
     color: whitesmoke;
@@ -146,51 +146,91 @@ h2 {
   position: relative;
   display: block;
   width: 100%; 
-  height: 100%;
-  margin: 0 auto;
-  padding: 0% 0% 56.25%;
+  height: 750px;
   overflow: hidden;
 }
-.boiler-vid-wrapper .boiler-vid {
+
+.boiler-vid {
   position: absolute;
   top: 0; bottom: 0; left: 0;
   width: 100%;
-  height: 100%;
+  height: 700px;
 }
 
-guest-mix {
-    position: relative;
+.guest-mix {
+  position: relative;
+  width: 100%; 
+  overflow: hidden;
+  padding: 2%;
 }
 
-.booking {
+.guest {
+    vertical-align: bottom;
+    text-align: justify;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.guest a {
     color: whitesmoke;
-    padding: 20%;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
 }
 
-.booking h2 {
-    font-size: 30px;
+.guest i:hover {
+  color: #f1c9df;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+}
+    
+.contact-outer {
+  height: 750px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-img {
+    width: 100%;
 }
 
 
-.booking a {
+.booking-text, .booking-text h2 {
+  color: whitesmoke;
+}
+
+.booking-text {
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  height: 200px;
+  width: 300px;
+
+  padding-left: 10px;
+  padding-top: 40px;
+
+  top: 10px;
+  right: 120px;
+
+  position: absolute;
+}
+
+.booking-text a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.booking i {
-    font-size: 20px;
-}
-
-ul {
-  list-style-type: none;
+.booking-text a:hover {
+  color: #f1c9df;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
 }
 
 footer {
-    bottom: 0;
-    position: relative;
     width: 100%;
 }
 
